@@ -1,0 +1,22 @@
+=== server-side Xray scan of the pushed image (incl. contextual analysis) ===
+exit: 0
+=== contextual analysis value counts on the IMAGE ===
+  40 Applicable
+  82 Not Applicable
+ 106 Not Covered
+  11 Undetermined
+=== APPLICABLE rows ===
+120:│ CVE-2026-34182   │ Critical │ Applicable     │ sha256__26cbea5cba74143fb │         │ 3.17:libcrypto3      │ 3.0.8-r3              │ [3.5.7-r0]              │ alpine │
+126:│ CVE-2026-34182   │ Critical │ Applicable     │ sha256__26cbea5cba74143fb │         │ 3.17:libssl3         │ 3.0.8-r3              │ [3.5.7-r0]              │ alpine │
+132:│ CVE-2022-48174   │ Critical │ Undetermined   │ sha256__26cbea5cba74143fb │         │ 3.17:ssl_client      │ 1.35.0-r29            │ [1.36.1-r2]             │ alpine │
+138:│ CVE-2022-48174   │ Critical │ Undetermined   │ sha256__26cbea5cba74143fb │         │ 3.17:busybox         │ 1.35.0-r29            │ [1.36.1-r2]             │ alpine │
+144:│ CVE-2022-48174   │ Critical │ Undetermined   │ sha256__26cbea5cba74143fb │         │ 3.17:busybox-binsh   │ 1.35.0-r29            │ [1.36.1-r2]             │ alpine │
+162:│ CVE-2026-28388   │ High     │ Applicable     │ sha256__26cbea5cba74143fb │         │ 3.17:libcrypto3      │ 3.0.8-r3              │ [3.5.6-r0]              │ alpine │
+168:│ CVE-2026-28388   │ High     │ Applicable     │ sha256__26cbea5cba74143fb │         │ 3.17:libssl3         │ 3.0.8-r3              │ [3.5.6-r0]              │ alpine │
+174:│ CVE-2026-28387   │ High     │ Applicable     │ sha256__26cbea5cba74143fb │         │ 3.17:libcrypto3      │ 3.0.8-r3              │ [3.5.6-r0]              │ alpine │
+180:│ CVE-2026-28387   │ High     │ Applicable     │ sha256__26cbea5cba74143fb │         │ 3.17:libssl3         │ 3.0.8-r3              │ [3.5.6-r0]              │ alpine │
+186:│ CVE-2025-69420   │ High     │ Applicable     │ sha256__26cbea5cba74143fb │         │ 3.17:libcrypto3      │ 3.0.8-r3              │ [3.0.19-r0]             │ alpine │
+=== lodash CVE-2018-16487 + CVE-2020-28500 + moment rows (npm, with CVSS + applicability) ===
+│ CVE-2022-31129   │ 5.0  │ 7.5  │ High     │ Applicable     │ sha256__3f0bfeb77aa8e79e2 │         │ moment               │ 2.19.3                │ [2.29.4]                │ npm    │ XRAY-230783  │
+│ CVE-2018-16487   │ 6.8  │ 5.6  │ Medium   │ Applicable     │ sha256__3f0bfeb77aa8e79e2 │         │ lodash               │ 4.17.4                │ [4.17.11]               │ npm    │ XRAY-75300   │
+│ CVE-2020-28500   │ 5.0  │ 5.3  │ Medium   │ Applicable     │ sha256__3f0bfeb77aa8e79e2 │         │ lodash               │ 4.17.4                │ [4.17.21]               │ npm    │ XRAY-140562  │
